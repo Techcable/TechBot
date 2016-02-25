@@ -4,17 +4,17 @@
             "name": "esper",
             "connection": {
                 "server": "irc.esper.net",
-                "port": 6667,
-                "ssl": false,
-                "ignore_cert": true,
+                "port": 6697,
+                "ssl": true,
+                "ignore_cert": false,
                 "password": ""
             },
-            "nick": "MyCloudBot",
-            "user": "cloudbot",
+            "nick": "TechBot",
+            "user": "CloudBot",
             "avoid_notices": false,
             "channels": [
-                "#cloudbot",
-                "#cloudbot2"
+                "#aquifer",
+                "#waterfall"
             ],
             "disabled_commands": [],
             "acls": {},
@@ -43,8 +43,8 @@
                         "op"
                     ],
                     "users": [
-                        "examplea!user@example.com",
-                        "exampleb!user@example.com"
+                        "Techcable!Techcable@techcable.net",
+                        "kashike!kashike@is.a.miserable.ninja"
                     ]
                 },
                 "moderators": {
@@ -54,7 +54,76 @@
                         "ignore"
                     ],
                     "users": [
-                        "examplec!user@example.com"
+                        "Z750!bnc@2001:41d0:1:68a3::45",
+                        "*!gsand@2607:5300:60:1bd6::130",
+                        "Byteflux!Byteflux@2607:5300:60:7b5a::",
+                        "Tux!tux@2604:180:0:3a1::130"
+                    ]
+                }
+            },
+            "plugins": {},
+            "command_prefix": "."
+        },
+        {
+            "name": "spigot",
+            "connection": {
+                "server": "irc.spi.gt",
+                "port": 6697,
+                "ssl": true,
+                "ignore_cert": false,
+                "password": ""
+            },
+            "nick": "TechBot",
+            "user": "CloudBot",
+            "avoid_notices": false,
+            "channels": [
+                "#aquifer",
+                "#techbot",
+                "#techcable",
+                "#waterfall"
+            ],
+            "disabled_commands": [],
+            "acls": {},
+            "nickserv": {
+                "enabled": false,
+                "nickserv_password": "",
+                "nickserv_user": "",
+                "nickserv_name": "nickserv",
+                "nickserv_command": "IDENTIFY"
+            },
+            "ratelimit": {
+                "max_tokens": 17.5,
+                "restore_rate": 2.5,
+                "message_cost": 5,
+                "strict": true
+            },
+            "permissions": {
+                "admins": {
+                    "perms": [
+                        "addfactoid",
+                        "delfactoid",
+                        "ignore",
+                        "botcontrol",
+                        "plpaste",
+                        "permissions_users",
+                        "op"
+                    ],
+                    "users": [
+                        "Techcable!Techcable@techcable.net",
+                        "kashike!kashike@is.a.miserable.ninja"
+                    ]
+                },
+                "moderators": {
+                    "perms": [
+                        "addfactoid",
+                        "delfactoid",
+                        "ignore"
+                    ],
+                    "users": [
+                        "Z750!Z750@destroys/tokyo",
+                        "*!gsand@SpigotMC-v38adf.a1e5.8s04.5300.2607.IP30",
+                        "Byteflux!Byteflux@SpigotMC-e0fpa9.b63j.8s04.5300.2607.IP30",
+                        "Tux!tux@SpigotMC-h06o5a.8ttg.1dbq.0180.2604.IP"
                     ]
                 }
             },
